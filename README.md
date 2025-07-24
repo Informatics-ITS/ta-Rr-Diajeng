@@ -1,17 +1,22 @@
 # 🏁 Tugas Akhir (TA) - Final Project
 
-**Nama Mahasiswa**: [Nama Lengkap]  
-**NRP**: [Nomor Registrasi Pokok]  
-**Judul TA**: [Judul Tugas Akhir]  
-**Dosen Pembimbing**: [Nama Dosen]  
-**Dosen Ko-pembimbing**: [Nama Dosen]
+**Nama Mahasiswa**: Rr. Diajeng Alfisyahrinnisa Anandha
+
+**NRP**: 5025211147
+
+**Judul TA**: Peramalan Deret Waktu Untuk Prediksi Parameter Operasional Untuk Optimasi Kapasitas Sistem Penyimpanan Energi Baterai (BESS)
+
+**Dosen Pembimbing**: Ir. Ary Mazharuddin Shiddiqi, S.Kom., M.Comp.Sc., Ph.D., IPM.
+
+**Dosen Ko-pembimbing**: Ratih Nur Esti Anggraini, S.Kom., M.Sc., Ph.D.
 
 ---
 
 ## 📺 Demo Aplikasi  
 Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):  
 
-[![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)  
+[![Demo Aplikasi](https://img.youtube.com/vi/Ks1iKSTRZhc/maxresdefault.jpg)](https://youtu.be/Ks1iKSTRZhc)
+  
 *Klik gambar di atas untuk menonton demo*
 
 ---
@@ -21,11 +26,8 @@ Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):
 ## 🛠 Panduan Instalasi & Menjalankan Software  
 
 ### Prasyarat  
-- Daftar dependensi (contoh):
+- Daftar dependensi:
   - Python 3.10+
-  - Node.js v18+
-  - MySQL 8.0
-  - [Lainnya...]
 
 ### Langkah-langkah  
 1. **Clone Repository**  
@@ -34,42 +36,28 @@ Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):
    ```
 2. **Instalasi Dependensi**
    ```bash
-   cd [folder-proyek]
-   pip install -r requirements.txt  # Contoh untuk Python
-   npm install  # Contoh untuk Node.js
+   pip install -r requirements.txt
    ```
-3. **Konfigurasi**
-- Salin/rename file .env.example menjadi .env
-- Isi variabel lingkungan sesuai kebutuhan (database, API key, dll.)
-4. **Jalankan Aplikasi**
+3. **Jalankan Aplikasi**
    ```bash
-   python main.py  # Contoh untuk Python
-   npm start      # Contoh untuk Node.js
+   # Untuk target fitur temperature
+   streamlit run interface/main_semuatemp.py
    ```
-5. Buka browser dan kunjungi: `http://localhost:3000` (sesuaikan dengan port proyek Anda)
+   ``` bash
+   # Untuk target fitur GHI
+   streamlit run interface/main_corrghi.py
+   ```
 
----
-
-## 📚 Dokumentasi Tambahan
-
-- [![Dokumentasi API]](docs/api.md)
-- [![Diagram Arsitektur]](docs/architecture.png)
-- [![Struktur Basis Data]](docs/database_schema.sql)
-
----
-
-## ✅ Validasi
-
-Pastikan proyek memenuhi kriteria berikut sebelum submit:
-- Source code dapat di-build/run tanpa error
-- Video demo jelas menampilkan fitur utama
-- README lengkap dan terupdate
-- Tidak ada data sensitif (password, API key) yang ter-expose
+   ```bash
+   # Untuk target fitur demand listrik/kw
+   streamlit run interface/main_corrkw.py
+   ```
+4. Browser otomatis terbuka setelah dijalankan
 
 ---
 
 ## ⁉️ Pertanyaan?
 
 Hubungi:
-- Penulis: [email@mahasiswa]
+- Penulis: [diajeng1203@gmail.com]
 - Pembimbing Utama: [email@pembimbing]
