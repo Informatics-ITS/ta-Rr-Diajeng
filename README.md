@@ -60,4 +60,4 @@ Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):
 
 Hubungi:
 - Penulis: [diajeng1203@gmail.com]
-- Pembimbing Utama: [email@pembimbing]
+- Pembimbing Utama: [ary.shiddiqi@if.its.ac.id]
